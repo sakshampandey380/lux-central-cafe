@@ -1,0 +1,368 @@
+/* ==========================================================================
+   LUX CENTRAL - 3D AMBIENT ATMOSPHERE & HARDWARE-ACCELERATED ANIMATIONS
+   Active Across ALL Devices (Desktop, Tablet, Mobile) with Zero Overflow
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. 3D Floating Canvas & Container (Active for ALL Screen Sizes)
+   -------------------------------------------------------------------------- */
+.ambient-3d-scene {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 1; /* Floats gently in the background */
+  overflow: hidden;
+  perspective: 1200px;
+  perspective-origin: 50% 50%;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+
+.ambient-3d-world {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  will-change: transform;
+}
+
+/* Individual Floating 3D Elements */
+.float-item-3d {
+  position: absolute;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  will-change: transform, opacity;
+  filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.15));
+  opacity: 0.82;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+/* Continuous 3D Floating & Bobbing Animations */
+@keyframes floatBobZ1 {
+  0%, 100% {
+    transform: translate3d(0, 0, 0px) rotateX(4deg) rotateY(-6deg) rotateZ(0deg);
+  }
+  50% {
+    transform: translate3d(10px, -20px, 45px) rotateX(-4deg) rotateY(6deg) rotateZ(2deg);
+  }
+}
+
+@keyframes floatBobZ2 {
+  0%, 100% {
+    transform: translate3d(0, 0, 25px) rotateX(-5deg) rotateY(8deg) rotateZ(1deg);
+  }
+  50% {
+    transform: translate3d(-14px, -24px, 65px) rotateX(6deg) rotateY(-4deg) rotateZ(-2deg);
+  }
+}
+
+@keyframes floatBobZ3 {
+  0%, 100% {
+    transform: translate3d(0, 0, -10px) rotateX(3deg) rotateY(-3deg) rotateZ(-1deg);
+  }
+  50% {
+    transform: translate3d(12px, -18px, 35px) rotateX(-3deg) rotateY(4deg) rotateZ(2deg);
+  }
+}
+
+/* Desktop Placements */
+.float-cup-steaming {
+  top: 14%;
+  left: 3%;
+  width: 130px;
+  animation: floatBobZ1 9s ease-in-out infinite;
+}
+
+.float-pancake-stack {
+  top: 62%;
+  left: 2%;
+  width: 140px;
+  animation: floatBobZ2 11s ease-in-out infinite;
+  animation-delay: -2s;
+}
+
+.float-cake-slice {
+  top: 22%;
+  right: 3%;
+  width: 135px;
+  animation: floatBobZ3 10s ease-in-out infinite;
+  animation-delay: -4s;
+}
+
+.float-glazed-scone {
+  top: 68%;
+  right: 4%;
+  width: 130px;
+  animation: floatBobZ1 12s ease-in-out infinite;
+  animation-delay: -1.5s;
+}
+
+.float-iced-drink {
+  top: 44%;
+  right: 8%;
+  width: 115px;
+  animation: floatBobZ2 10.5s ease-in-out infinite;
+  animation-delay: -5s;
+}
+
+.float-golden-biscuit {
+  top: 82%;
+  left: 10%;
+  width: 120px;
+  animation: floatBobZ3 8.5s ease-in-out infinite;
+  animation-delay: -3s;
+}
+
+/* Steam Curl Keyframes */
+@keyframes steamCurl1 {
+  0% { opacity: 0; transform: translateY(0) scaleX(0.9); }
+  30% { opacity: 0.65; transform: translateY(-15px) scaleX(1.1); }
+  70% { opacity: 0.35; transform: translateY(-35px) scaleX(1.25); }
+  100% { opacity: 0; transform: translateY(-55px) scaleX(1.4); }
+}
+
+.steam-trail-1 {
+  animation: steamCurl1 3.2s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+.steam-trail-2 {
+  animation: steamCurl1 3.6s ease-in-out 1.2s infinite;
+  transform-origin: bottom center;
+}
+
+.steam-trail-3 {
+  animation: steamCurl1 3.4s ease-in-out 2.1s infinite;
+  transform-origin: bottom center;
+}
+
+/* Dripping Syrup Flow */
+@keyframes syrupDrip {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(1.18); }
+}
+
+.syrup-drip-flow {
+  animation: syrupDrip 4.5s ease-in-out infinite;
+  transform-origin: top center;
+}
+
+/* --------------------------------------------------------------------------
+   2. Animated Corner Cafe Scene (Desktop & Mobile Compatible)
+   -------------------------------------------------------------------------- */
+.corner-bistro-scene {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 95;
+  pointer-events: auto;
+  filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.35));
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.corner-bistro-wrapper {
+  position: relative;
+  width: 220px;
+  height: 140px;
+  background: rgba(15, 10, 8, 0.9);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid #B8853A;
+  border-radius: 8px;
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.corner-bistro-badge {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #B8853A;
+  color: #FFFFFF;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 3px 10px;
+  border-radius: 12px;
+  white-space: nowrap;
+}
+
+.bistro-svg-art {
+  width: 100%;
+  height: 110px;
+}
+
+.bistro-toggle-btn {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  color: #FFFFFF;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  transition: background 0.2s ease;
+  z-index: 5;
+}
+
+.bistro-toggle-btn:hover {
+  background: #B8853A;
+}
+
+.corner-bistro-scene.minimized .corner-bistro-wrapper {
+  height: 34px;
+  width: auto;
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+
+.corner-bistro-scene.minimized .bistro-svg-art,
+.corner-bistro-scene.minimized .corner-bistro-badge {
+  display: none;
+}
+
+.corner-bistro-scene.minimized .bistro-minimized-text {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.bistro-minimized-text {
+  display: none;
+}
+
+/* --------------------------------------------------------------------------
+   3. Tablet Responsive Scaling (768px - 991px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 991px) {
+  .float-cup-steaming {
+    width: 95px;
+    top: 12%;
+    left: 2%;
+  }
+  .float-pancake-stack {
+    width: 105px;
+    top: 58%;
+    left: 2%;
+  }
+  .float-cake-slice {
+    width: 100px;
+    top: 20%;
+    right: 2%;
+  }
+  .float-glazed-scone {
+    width: 95px;
+    top: 66%;
+    right: 3%;
+  }
+  .float-iced-drink {
+    width: 85px;
+    top: 40%;
+    right: 5%;
+  }
+  .float-golden-biscuit {
+    width: 90px;
+    top: 80%;
+    left: 6%;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   4. Mobile Responsive Scaling (< 768px)
+   KEPT FULLY VISIBLE & ACTIVE ON ALL MOBILE DEVICES
+   Proportionally scaled along screen edges so it never covers content!
+   -------------------------------------------------------------------------- */
+@media (max-width: 767px) {
+  .ambient-3d-scene {
+    opacity: 0.85; /* Vibrant and visible across mobile screens */
+  }
+
+  .float-item-3d {
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.2));
+  }
+
+  /* Steaming Cup on Upper Left */
+  .float-cup-steaming {
+    top: 10%;
+    left: 1%;
+    width: 72px;
+  }
+
+  /* Cake Slice on Upper Right */
+  .float-cake-slice {
+    top: 26%;
+    right: 1%;
+    width: 76px;
+  }
+
+  /* Golden Biscuit on Mid Right */
+  .float-golden-biscuit {
+    top: 42%;
+    right: 1%;
+    width: 66px;
+  }
+
+  /* Pancake Stack on Mid Left */
+  .float-pancake-stack {
+    top: 54%;
+    left: 1%;
+    width: 78px;
+  }
+
+  /* Glazed Scone on Lower Right */
+  .float-glazed-scone {
+    top: 72%;
+    right: 1%;
+    width: 74px;
+  }
+
+  /* Iced Drink on Lower Left */
+  .float-iced-drink {
+    top: 84%;
+    left: 2%;
+    width: 65px;
+  }
+
+  /* Corner Bistro Scene on Mobile: Docked comfortably above bottom navbar (56px) */
+  .corner-bistro-scene {
+    bottom: 64px;
+    right: 12px;
+  }
+
+  .corner-bistro-wrapper {
+    width: 175px;
+    height: 115px;
+    padding: 6px 8px;
+  }
+
+  .bistro-svg-art {
+    height: 90px;
+  }
+
+  .corner-bistro-badge {
+    font-size: 0.58rem;
+    padding: 2px 8px;
+    top: -8px;
+  }
+}

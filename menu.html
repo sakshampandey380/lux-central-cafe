@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Explore the full handcrafted digital menu for Lux Central (Phoenix, AZ). Small-batch espresso, scratch bakery, Dutch pancakes, and evening craft cocktails with 0% delivery app markup." />
+  <title>Food & Drink Menu | Lux Central - Cave Creek & Midtown Phoenix Style</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Food & Drink Menu | Lux Central" />
+  <meta property="og:description" content="Handcrafted espresso, fresh-baked scones, Dutch baby pancakes, sandwiches and evening cocktails." />
+  <meta property="og:image" content="assets/images/morning-pastry-quiche-display.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/lux-logo-transparent.png" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/animations3d.css" />
+</head>
+<body>
+
+  <!-- ========================================================================
+       1. GROTTO CAFE STICKY NAVIGATION BAR
+       ======================================================================== -->
+  <nav class="navbar-grotto nav-scroll" id="navbarGrotto" role="navigation">
+    <div class="container navbar-inner">
+      <!-- Brand Logo -->
+      <a href="index.html" class="grotto-logo-link" aria-label="Lux Central Home">
+        <div class="grotto-logo-frame">
+          <img src="assets/images/lux-logo.jpg" alt="Lux Logo" class="grotto-logo-img" />
+        </div>
+        <div class="grotto-brand-text">
+          <span class="grotto-brand-title">Lux Central</span>
+          <span class="grotto-brand-sub">Phoenix, Arizona</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="grotto-nav-menu" role="menubar">
+        <li class="grotto-nav-item"><a href="index.html">Home</a></li>
+        <li class="grotto-nav-item active"><a href="menu.html">Menu</a></li>
+        <li class="grotto-nav-item"><a href="index.html#about">About</a></li>
+        <li class="grotto-nav-item"><a href="index.html#order-online">Order Online</a></li>
+        <li class="grotto-nav-item"><a href="index.html#location">Hours & Location</a></li>
+      </ul>
+
+      <!-- Header Right Actions -->
+      <div class="grotto-header-actions">
+        <!-- Cart Trigger Button -->
+        <button class="btn-grotto-cart btn-open-cart" aria-label="Open Order Cart">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+          </svg>
+          <span>Cart</span>
+          <span class="cart-count-badge" style="display:none;">0</span>
+        </button>
+
+        <!-- Direct Call Counter Button -->
+        <a href="tel:+16023271396" class="btn-grotto-order">
+          <span>Call: (602) 327-1396</span>
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button class="grotto-mobile-toggle" id="btnMobileToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Slide Navigation -->
+    <div class="grotto-mobile-nav" id="grottoMobileNav">
+      <ul class="grotto-mobile-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" style="color:#B8853A;">Menu</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#order-online">Order Online</a></li>
+        <li><a href="index.html#location">Hours & Location</a></li>
+      </ul>
+      <div class="grotto-mobile-actions">
+        <a href="tel:+16023271396" class="custom-temp-btn btn-grotto-gold" style="width:100%;">Call Counter: (602) 327-1396</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================================================
+       2. MENU HERO HEADER (Grotto Style)
+       ======================================================================== -->
+  <header class="menu-hero-header">
+    <div class="container">
+      <h1 style="font-family:'Playfair Display',serif; font-size: clamp(2.2rem, 5vw, 3.4rem); color:#FFFFFF; margin-bottom:12px;">
+        Our Food & Drink Menu
+      </h1>
+      <p style="font-size: 1.05rem; color: #DDD; max-width: 680px; margin: 0 auto 20px auto;">
+        Scratch-prepared daily from our Midtown blackboard. 0% third-party app markup — 100% direct pickup.
+      </p>
+      <div style="display:inline-block; background:rgba(255,255,255,0.1); border:1px solid #B8853A; padding:6px 18px; border-radius:30px; font-size:0.85rem; color:#F2CB6F; font-weight:700;">
+        Open Daily 6:00 AM – 10:00 PM MST • Breakfast (6–11 AM) • Lunch (11:30 AM–5 PM) • Dinner (5 PM–Close)
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       3. CATEGORY TABS BAR (Sticky Under Navbar)
+       ======================================================================== -->
+  <div class="menu-category-tabs-bar">
+    <div class="container">
+      <div class="category-tabs-scroll">
+        <button class="category-tab-btn active" data-category="all">All Items</button>
+        <button class="category-tab-btn" data-category="bakery">Scratch Bakery</button>
+        <button class="category-tab-btn" data-category="espresso">Espresso & Brews</button>
+        <button class="category-tab-btn" data-category="kitchen">Breakfast & Lunch</button>
+        <button class="category-tab-btn" data-category="cocktails">Evening Cocktails</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       4. SEARCH & DIETARY FILTER CONTROLS
+       ======================================================================== -->
+  <section style="background-color: #FAF8F5; padding: 25px 20px 10px 20px;">
+    <div class="container" style="display:flex; flex-wrap:wrap; gap:16px; align-items:center; justify-content:space-between;">
+      <div style="flex:1; min-width:240px; max-width:420px;">
+        <input 
+          type="text" 
+          id="menuSearchInput" 
+          placeholder="Search menu (e.g. Dutch, Scone, Latte, Steak)..." 
+          style="width:100%; padding:10px 16px; border:1px solid #CCC; border-radius:4px; font-size:0.9rem; outline:none;" 
+        />
+      </div>
+
+      <div style="display:flex; gap:8px; flex-wrap:wrap;">
+        <button class="dietary-pill-btn active" data-diet="all" style="padding:6px 14px; border:1px solid #CCC; background:#FFF; border-radius:30px; font-size:0.8rem; font-weight:600; cursor:pointer;">All</button>
+        <button class="dietary-pill-btn" data-diet="House-Baked" style="padding:6px 14px; border:1px solid #CCC; background:#FFF; border-radius:30px; font-size:0.8rem; font-weight:600; cursor:pointer;">House-Baked</button>
+        <button class="dietary-pill-btn" data-diet="Vegetarian" style="padding:6px 14px; border:1px solid #CCC; background:#FFF; border-radius:30px; font-size:0.8rem; font-weight:600; cursor:pointer;">Vegetarian</button>
+        <button class="dietary-pill-btn" data-diet="Vegan" style="padding:6px 14px; border:1px solid #CCC; border-radius:30px; background:#FFF; font-size:0.8rem; font-weight:600; cursor:pointer;">Vegan</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       5. MENU CARDS GRID (Responsive Grotto Cards)
+       ======================================================================== -->
+  <main style="padding: 40px 20px 80px 20px; background-color: #FAF8F5;">
+    <div class="container">
+      <div class="grotto-cards-grid" id="menuCardsGrid">
+        <!-- Rendered by menu.js -->
+      </div>
+    </div>
+  </main>
+
+  <!-- ========================================================================
+       6. 3-COLUMN CONTACT / HOURS / LOCATION FOOTER (Grotto Style)
+       ======================================================================== -->
+  <footer class="footer-contact-grotto" id="location">
+    <div class="container">
+      <div class="footer-grotto-grid">
+        <!-- Col 1: Location -->
+        <div class="footer-col">
+          <h1>Location</h1>
+          <div style="font-weight:700; font-size:1.05rem; margin-bottom:4px;">Lux Central</div>
+          <div>4402 N Central Ave</div>
+          <div>Phoenix, AZ 85012</div>
+          <div>
+            <a href="https://maps.google.com/?q=4402+N+Central+Ave,+Phoenix,+AZ+85012" target="_blank" rel="noopener" class="get-directions-btn">
+              📍 Get Directions
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Hours -->
+        <div class="footer-col">
+          <h1>Hours</h1>
+          <div style="margin-bottom:6px;">Sun, Mon, Tue, Wed, Thu, Fri, Sat</div>
+          <div style="font-size:1.15rem; font-weight:700; color:#F2CB6F;">6:00 AM – 10:00 PM MST</div>
+          <div style="margin-top:8px; font-size:0.85rem; color:#AAA;">Open 365 Days a Year</div>
+        </div>
+
+        <!-- Col 3: Contact Us -->
+        <div class="footer-col">
+          <h1>Contact Us</h1>
+          <p><a href="tel:+16023271396" style="font-weight:700; font-size:1.1rem;">(602) 327-1396</a></p>
+          <p><a href="mailto:luxcentral27@gmail.com">luxcentral27@gmail.com</a></p>
+          <p style="margin-top:10px;">
+            <a href="https://www.instagram.com" target="_blank" rel="noopener" style="color:#B8853A; font-weight:700;">Instagram</a> • 
+            <a href="https://www.google.com/search?q=Lux+Central+Phoenix" target="_blank" rel="noopener" style="color:#B8853A; font-weight:700;">Google Page</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom-copyright">
+        © 2026 Lux Central (Phoenix, AZ). All rights reserved. Completely inspired by Grotto Cafe UI/UX.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       7. GROTTO CAFE STICKY MOBILE BOTTOM NAVIGATION BAR
+       ======================================================================== -->
+  <nav class="grotto-bottom-navbar" aria-label="Mobile Navigation Bar">
+    <div class="bottom-nav-inner">
+      <a href="menu.html" class="bottom-nav-item">
+        <span>Order</span>
+      </a>
+      <a href="menu.html" class="bottom-nav-item">
+        <span>Menu</span>
+      </a>
+      <a href="tel:+16023271396" class="bottom-nav-item" style="color:#F2CB6F !important;">
+        <span>Call</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ========================================================================
+       8. DIRECT ORDER DRAWER / CART SIDEBAR
+       ======================================================================== -->
+  <div class="grotto-cart-backdrop" id="grottoCartBackdrop"></div>
+  <aside class="grotto-cart-drawer" id="grottoCartDrawer" role="dialog" aria-labelledby="cartTitle">
+    <div class="cart-drawer-header">
+      <h2 class="cart-drawer-title" id="cartTitle">Your Direct Order</h2>
+      <button class="cart-drawer-close" id="btnCloseCart" aria-label="Close Cart">✕</button>
+    </div>
+
+    <div class="cart-drawer-body" id="cartDrawerBody">
+      <!-- Injected by app.js -->
+    </div>
+
+    <div class="cart-drawer-footer" id="cartDrawerFooter" style="display:none;">
+      <div class="cart-summary-line">
+        <span>Subtotal</span>
+        <span id="cartSubtotal">$0.00</span>
+      </div>
+      <div class="cart-summary-line">
+        <span>Phoenix Tax (8.6%)</span>
+        <span id="cartTax">$0.00</span>
+      </div>
+      <div class="cart-summary-line total">
+        <span>Total for Pickup</span>
+        <span id="cartTotal">$0.00</span>
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:10px; margin-top:16px;">
+        <button class="custom-temp-btn btn-grotto-gold" id="btnCheckoutCall" style="width:100%;">
+          📞 Call Counter to Order (+1 602-327-1396)
+        </button>
+        <button class="custom-temp-btn btn-grotto-black" id="btnCheckoutWhatsApp" style="width:100%;">
+          💬 Send Order via WhatsApp
+        </button>
+        <button id="btnClearOrder" style="color:#999; font-size:0.8rem; text-decoration:underline; text-align:center; padding:6px;">
+          Clear Cart
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Core Scripts -->
+  <script src="assets/js/menu-data.js"></script>
+  <script src="assets/js/background3d.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/menu.js"></script>
+
+  <!-- Script for category param (e.g. ?cat=bakery) -->
+  <script>
+    (function () {
+      const urlParams = new URLSearchParams(window.location.search);
+      const catParam = urlParams.get('cat');
+      if (catParam) {
+        const btn = document.querySelector(`.category-tab-btn[data-category="${catParam}"]`);
+        if (btn) btn.click();
+      }
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Lux Central - Midtown Phoenix's premier scratch bakery, coffee roaster, kitchen and cocktail lounge since 2005. Open daily 6am - 10pm at 4402 N Central Ave." />
+  <title>Lux Central - Must-Visit Cafe, Scratch Bakery & Kitchen in Phoenix, AZ</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Lux Central - Phoenix, AZ" />
+  <meta property="og:description" content="Midtown Phoenix's premier scratch bakery, coffee roaster, kitchen and evening lounge." />
+  <meta property="og:image" content="assets/images/cafe-interior-daylight.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/lux-logo-transparent.png" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/animations3d.css" />
+</head>
+<body>
+
+  <!-- ========================================================================
+       1. 1-SECOND LOGO ANIMATION PRELOADER (Exactly 1.0s)
+       ======================================================================== -->
+  <div class="lux-preloader" id="luxPreloader" aria-hidden="true">
+    <div class="preloader-glow-orb"></div>
+    <div class="preloader-logo-wrapper">
+      <img src="assets/images/lux-logo.jpg" alt="Lux Brand Logo" class="preloader-logo-img" />
+    </div>
+    <div class="preloader-subtext">Midtown Phoenix • Est. 2005</div>
+  </div>
+
+  <!-- ========================================================================
+       2. GROTTO CAFE STICKY NAVIGATION BAR
+       ======================================================================== -->
+  <nav class="navbar-grotto" id="navbarGrotto" role="navigation">
+    <div class="container navbar-inner">
+      <!-- Brand Logo -->
+      <a href="index.html" class="grotto-logo-link" aria-label="Lux Central Home">
+        <div class="grotto-logo-frame">
+          <img src="assets/images/lux-logo.jpg" alt="Lux Logo" class="grotto-logo-img" />
+        </div>
+        <div class="grotto-brand-text">
+          <span class="grotto-brand-title">Lux Central</span>
+          <span class="grotto-brand-sub">Phoenix, Arizona</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links (Grotto Style) -->
+      <ul class="grotto-nav-menu" role="menubar">
+        <li class="grotto-nav-item active"><a href="index.html">Home</a></li>
+        <li class="grotto-nav-item"><a href="menu.html">Menu</a></li>
+        <li class="grotto-nav-item"><a href="#about">About</a></li>
+        <li class="grotto-nav-item"><a href="#order-online">Order Online</a></li>
+        <li class="grotto-nav-item"><a href="#location">Hours & Location</a></li>
+      </ul>
+
+      <!-- Header Right Actions -->
+      <div class="grotto-header-actions">
+        <!-- Cart Trigger Button -->
+        <button class="btn-grotto-cart btn-open-cart" aria-label="Open Order Cart">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+          </svg>
+          <span>Cart</span>
+          <span class="cart-count-badge" style="display:none;">0</span>
+        </button>
+
+        <!-- Order Online Button -->
+        <a href="menu.html" class="btn-grotto-order">
+          <span>Order Online</span>
+        </a>
+
+        <!-- Mobile Toggle (44x44px target) -->
+        <button class="grotto-mobile-toggle" id="btnMobileToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Slide Navigation -->
+    <div class="grotto-mobile-nav" id="grottoMobileNav">
+      <ul class="grotto-mobile-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" style="color:#B8853A;">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#order-online">Order Online</a></li>
+        <li><a href="#location">Hours & Location</a></li>
+      </ul>
+      <div class="grotto-mobile-actions">
+        <a href="menu.html" class="custom-temp-btn btn-grotto-gold" style="width:100%;">Order Online Direct</a>
+        <a href="tel:+16023271396" class="custom-temp-btn btn-grotto-outline" style="width:100%;">Call Counter: (602) 327-1396</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================================================
+       3. HERO COVER SECTION (Grotto Cafe Video/Image Cover Inspiration)
+       ======================================================================== -->
+  <header class="hero-grotto-cover" style="background-image: url('assets/images/cafe-interior-daylight.jpg');">
+    <div class="hero-grotto-content">
+      <div class="hero-grotto-badge" id="heroStatusBadge">
+        <span class="status-dot-pulse"></span>
+        <span>Open Daily 6:00 AM – 10:00 PM MST</span>
+      </div>
+
+      <h1 class="hero-grotto-title">
+        Welcome to Lux Central
+      </h1>
+
+      <p class="hero-grotto-desc">
+        Nestled in the heart of Midtown Phoenix on Central Avenue, serving the finest craft coffee, scratch bakery, and kitchen provisions since 2005.
+      </p>
+
+      <div class="hero-grotto-buttons">
+        <a href="menu.html" class="custom-temp-btn btn-grotto-gold">Explore Our Menu</a>
+        <a href="tel:+16023271396" class="custom-temp-btn btn-grotto-outline">📞 Call Counter</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       4. SECTION 1: WELCOME INTRO (Grotto Style)
+       ======================================================================== -->
+  <section class="section-welcome-grotto" id="about">
+    <div class="container">
+      <h1>Welcome to Lux Central</h1>
+      <p>
+        Lux Central has been serving Midtown Phoenix with honest scratch baking, in-house roasted specialty espresso, and hearty farmhouse comfort for two decades. Located at 4402 N Central Ave right off Camelback Road, Lux is eponymously named for the creative light and warmth its welcoming community provides from morning coffee through evening cocktails.
+      </p>
+      <a href="menu.html" class="custom-temp-btn btn-grotto-black">Learn More & View Menu</a>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       5. SECTION 2: SPLIT FEATURE CARDS (Ochre #F2CB6F Background)
+       Matching Grotto Cafe's Parties & Catering Split Sections
+       ======================================================================== -->
+  <!-- Split 1: Scratch Bakery -->
+  <section class="grotto-split-section">
+    <div class="split-image-col" style="background-image: url('assets/images/bakery-counter-spread.jpg');" role="img" aria-label="Fresh Scratch Bakery Spread"></div>
+    <div class="split-content-col">
+      <h1>Scratch Bakery & Pastries</h1>
+      <p>
+        Our bakery operates from four in the morning, hand-rolling European butter croissants, baking golden Dutch babies, and glazing wild berry scones with celebratory sprinkles. Everything is made from scratch with zero preservatives.
+      </p>
+      <a href="menu.html?cat=bakery" class="custom-temp-btn btn-grotto-black">Explore Bakery</a>
+    </div>
+  </section>
+
+  <!-- Split 2: Evening Cocktails & Provisions -->
+  <section class="grotto-split-section reverse">
+    <div class="split-image-col" style="background-image: url('assets/images/evening-cocktail-bar.jpg');" role="img" aria-label="Evening Cocktail Bar Lounge"></div>
+    <div class="split-content-col">
+      <h1>Evening Bar & Provisions</h1>
+      <p>
+        As twilight settles over Central Avenue, our counter transitions into an intimate cocktail sanctuary. Savor freshly shaken espresso martinis, smoked desert rye old fashioneds, Prime NY strip steaks, and artisan charcuterie boards.
+      </p>
+      <a href="menu.html?cat=cocktails" class="custom-temp-btn btn-grotto-black">Evening Menu</a>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       6. SECTION 3: "ORDER ONLINE" FOOD SHOWCASE (Grotto Style)
+       ======================================================================== -->
+  <section class="section-order-online" id="order-online">
+    <div class="container">
+      <h1 class="section-header-grotto">Order Online</h1>
+      
+      <!-- Food Cards Grid (Injected dynamically from menu-data.js) -->
+      <div class="grotto-cards-grid" id="grottoOrderGrid">
+        <!-- Rendered by menu.js -->
+      </div>
+
+      <a href="menu.html" class="custom-temp-btn btn-grotto-gold" style="padding: 14px 45px;">
+        View Full Digital Menu (30+ Items)
+      </a>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       7. SECTION 4: "SAVE TIME, ORDER ONLINE!" CALLOUT (Grotto Style)
+       ======================================================================== -->
+  <section class="section-cta-banner">
+    <div class="container">
+      <h1>Save Time, Order Direct!</h1>
+      <p style="font-size:1.1rem; color:#555; max-width:650px; margin:0 auto 24px auto;">
+        Skip third-party delivery app markups and hidden fees. 100% of your order goes straight to the Lux Central kitchen and barista team.
+      </p>
+      <a href="menu.html" class="custom-temp-btn btn-grotto-gold">Order Now</a>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       8. SECTION 5: LIVE MUSIC & COMMUNITY VIBE (Grotto Style)
+       ======================================================================== -->
+  <section class="section-event-banner">
+    <div class="container">
+      <h1>Patio Vibe & Community Gathering</h1>
+      <p>
+        Join us on our sunlit outdoor patio and cozy mid-century indoor lounge. Enjoy free gigabit WiFi, lively neighborhood conversations, and artisan coffee 365 days a year from 6:00 AM to 10:00 PM.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       9. SECTION 6: CUSTOMER REVIEWS (Grotto Style)
+       ======================================================================== -->
+  <section class="section-reviews-grotto">
+    <div class="container">
+      <h1 class="section-header-grotto">Customer Reviews</h1>
+
+      <div class="reviews-grid-grotto">
+        <div class="review-card-grotto">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "Great energy in this neighborhood cafe! Indoor and patio dining are both unmatched. The scratch berry scone and Dutch baby pancakes are out of this world. Best espresso rosetta in Phoenix."
+          </p>
+          <div class="review-author">Sarah M.</div>
+          <div class="review-source">Google Review</div>
+        </div>
+
+        <div class="review-card-grotto">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "One of my favorite cafes of all time. Such an inviting oasis in Midtown Phoenix. The steak & cheese sandwich on toasted baguette is phenomenal, and the evening espresso martinis are legendary."
+          </p>
+          <div class="review-author">David K.</div>
+          <div class="review-source">Google Review</div>
+        </div>
+
+        <div class="review-card-grotto">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "I highly recommend Lux Central for anything from early morning pour-overs to late night dinners. The staff is warm and attentive, and the scratch bakery spread is truly one of a kind."
+          </p>
+          <div class="review-author">Elena R.</div>
+          <div class="review-source">Google Review</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       10. SECTION 7: PHOTO GALLERY (Grotto Style)
+       ======================================================================== -->
+  <section class="section-gallery-grotto">
+    <div class="container">
+      <h1 class="section-header-grotto">Photo Gallery</h1>
+
+      <div class="gallery-grid-grotto">
+        <div class="gallery-item-wrap">
+          <img src="assets/images/artisan-latte-art.jpg" alt="Artisan Rosetta Latte Art" loading="lazy" />
+        </div>
+        <div class="gallery-item-wrap">
+          <img src="assets/images/scone-berry-sprinkle.jpg" alt="Glazed Berry Confetti Scone" loading="lazy" />
+        </div>
+        <div class="gallery-item-wrap">
+          <img src="assets/images/thumbprint-jam-cookie.jpg" alt="Shortbread Jam Thumbprint Tart" loading="lazy" />
+        </div>
+        <div class="gallery-item-wrap">
+          <img src="assets/images/morning-pastry-quiche-display.jpg" alt="Farm Quiches and Pastries" loading="lazy" />
+        </div>
+        <div class="gallery-item-wrap">
+          <img src="assets/images/baristas-craft-roasting.jpg" alt="Baristas Crafting Coffee" loading="lazy" />
+        </div>
+        <div class="gallery-item-wrap">
+          <img src="assets/images/lounge-midcentury-seating.jpg" alt="Mid-Century Lounge Dining Area" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       11. SECTION 8: NEWSLETTER & INTERACTIVE MAP (Grotto Style)
+       ======================================================================== -->
+  <section class="section-map-newsletter">
+    <div class="newsletter-col">
+      <h1>Stay in the Loop!</h1>
+      <p>Subscribe for weekly seasonal bakery features, single-origin roasts, and evening cocktail specials.</p>
+      <form class="newsletter-form" onsubmit="event.preventDefault(); window.LuxApp.showToast('Thank you for subscribing!');">
+        <input type="email" class="newsletter-input" placeholder="Enter your email address..." required aria-label="Email address" />
+        <button type="submit" class="custom-temp-btn btn-grotto-gold" style="padding: 12px 24px; min-height:46px;">Join</button>
+      </form>
+    </div>
+
+    <div class="map-col">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.5458004552424!2d-112.0763261234971!3d33.50150914685043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b12eb559ad947%3A0x7d6360c7f769f3c7!2sLux%20Central!5e0!3m2!1sen!2sus!4v1710000000000!5m2!1sen!2sus"
+        title="Lux Central Location Map"
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       12. SECTION 9: 3-COLUMN CONTACT / HOURS / LOCATION FOOTER (Grotto Style)
+       ======================================================================== -->
+  <footer class="footer-contact-grotto" id="location">
+    <div class="container">
+      <div class="footer-grotto-grid">
+        <!-- Col 1: Location -->
+        <div class="footer-col">
+          <h1>Location</h1>
+          <div style="font-weight:700; font-size:1.05rem; margin-bottom:4px;">Lux Central</div>
+          <div>4402 N Central Ave</div>
+          <div>Phoenix, AZ 85012</div>
+          <div>
+            <a href="https://maps.google.com/?q=4402+N+Central+Ave,+Phoenix,+AZ+85012" target="_blank" rel="noopener" class="get-directions-btn">
+              📍 Get Directions
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Hours -->
+        <div class="footer-col">
+          <h1>Hours</h1>
+          <div style="margin-bottom:6px;">Sun, Mon, Tue, Wed, Thu, Fri, Sat</div>
+          <div style="font-size:1.15rem; font-weight:700; color:#F2CB6F;">6:00 AM – 10:00 PM MST</div>
+          <div style="margin-top:8px; font-size:0.85rem; color:#AAA;">Open 365 Days a Year</div>
+        </div>
+
+        <!-- Col 3: Contact Us -->
+        <div class="footer-col">
+          <h1>Contact Us</h1>
+          <p><a href="tel:+16023271396" style="font-weight:700; font-size:1.1rem;">(602) 327-1396</a></p>
+          <p><a href="mailto:luxcentral27@gmail.com">luxcentral27@gmail.com</a></p>
+          <p style="margin-top:10px;">
+            <a href="https://www.instagram.com" target="_blank" rel="noopener" style="color:#B8853A; font-weight:700;">Instagram</a> • 
+            <a href="https://www.google.com/search?q=Lux+Central+Phoenix" target="_blank" rel="noopener" style="color:#B8853A; font-weight:700;">Google Page</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom-copyright">
+        © 2026 Lux Central (Phoenix, AZ). All rights reserved. Completely inspired by Grotto Cafe UI/UX.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       13. GROTTO CAFE STICKY MOBILE BOTTOM NAVIGATION BAR
+       (The exact feature that prevents clipping & guarantees mobile conversion!)
+       ======================================================================== -->
+  <nav class="grotto-bottom-navbar" aria-label="Mobile Navigation Bar">
+    <div class="bottom-nav-inner">
+      <a href="menu.html" class="bottom-nav-item">
+        <span>Order</span>
+      </a>
+      <a href="menu.html" class="bottom-nav-item">
+        <span>Menu</span>
+      </a>
+      <a href="tel:+16023271396" class="bottom-nav-item" style="color:#F2CB6F !important;">
+        <span>Call</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ========================================================================
+       14. DIRECT ORDER DRAWER / CART SIDEBAR
+       ======================================================================== -->
+  <div class="grotto-cart-backdrop" id="grottoCartBackdrop"></div>
+  <aside class="grotto-cart-drawer" id="grottoCartDrawer" role="dialog" aria-labelledby="cartTitle">
+    <div class="cart-drawer-header">
+      <h2 class="cart-drawer-title" id="cartTitle">Your Direct Order</h2>
+      <button class="cart-drawer-close" id="btnCloseCart" aria-label="Close Cart">✕</button>
+    </div>
+
+    <div class="cart-drawer-body" id="cartDrawerBody">
+      <!-- Injected by app.js -->
+    </div>
+
+    <div class="cart-drawer-footer" id="cartDrawerFooter" style="display:none;">
+      <div class="cart-summary-line">
+        <span>Subtotal</span>
+        <span id="cartSubtotal">$0.00</span>
+      </div>
+      <div class="cart-summary-line">
+        <span>Phoenix Tax (8.6%)</span>
+        <span id="cartTax">$0.00</span>
+      </div>
+      <div class="cart-summary-line total">
+        <span>Total for Pickup</span>
+        <span id="cartTotal">$0.00</span>
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:10px; margin-top:16px;">
+        <button class="custom-temp-btn btn-grotto-gold" id="btnCheckoutCall" style="width:100%;">
+          📞 Call Counter to Order (+1 602-327-1396)
+        </button>
+        <button class="custom-temp-btn btn-grotto-black" id="btnCheckoutWhatsApp" style="width:100%;">
+          💬 Send Order via WhatsApp
+        </button>
+        <button id="btnClearOrder" style="color:#999; font-size:0.8rem; text-decoration:underline; text-align:center; padding:6px;">
+          Clear Cart
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Core Scripts -->
+  <script src="assets/js/menu-data.js"></script>
+  <script src="assets/js/background3d.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/menu.js"></script>
+</body>
+</html>
